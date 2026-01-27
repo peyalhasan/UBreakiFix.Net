@@ -86,4 +86,79 @@ const Activity = [
 
 ]
 
-export { OverView, Activity }
+const callList = [
+    {
+        id: 1,
+        number: '+1 (555) 345-6789',
+        image: AI,
+        date: '2025-12-16',
+        uploadTime: '09:42 AM',
+        time: '5:23',
+        slug: 'Quote Provided',
+        problem: 'Screen',
+        type: 'AI Resolved',
+        iconColor: 'green',
+    },
+    {
+        id: 2,
+        number: '+1 (555) 123-4567',
+        image: Transfer,
+        date: '2025-12-16',
+        uploadTime: '10:15 AM',
+        time: '4:10',
+        slug: 'Escalated to technician',
+        problem: 'Software',
+        type: 'Warm Transfer',
+        iconColor: 'orange',
+    },
+    {
+        id: 3,
+        number: '+1 (555) 987-6543',
+        image: Booked,
+        date: '2025-12-16',
+        uploadTime: '11:05 AM',
+        time: '6:45',
+        slug: 'Appointment Booked',
+        problem: 'Battery',
+        type: 'Appointment',
+        iconColor: 'blue',
+    },
+    {
+        id: 4,
+        number: '+1 (555) 555-0199',
+        image: Missed,
+        date: '2025-12-16',
+        uploadTime: '01:20 PM',
+        time: '0:20',
+        slug: 'Call Dropped',
+        problem: 'Unknown',
+        type: 'Dropped',
+        iconColor: 'red',
+    },
+    {
+        id: 5,
+        number: '+1 (555) 222-3333',
+        image: AI,
+        date: '2025-12-16',
+        uploadTime: '02:45 PM',
+        time: '8:12',
+        slug: 'Quote Provided',
+        problem: 'Back Glass',
+        type: 'AI Resolved',
+        iconColor: 'green',
+    },
+    {
+        id: 6,
+        number: '+1 (555) 444-5555',
+        image: Call,
+        date: '2025-12-16',
+        uploadTime: '04:10 PM',
+        time: '3:50',
+        slug: 'Technical Support',
+        problem: 'Charging Port',
+        type: 'Warm Transfer',
+        iconColor: 'orange',
+    }
+];
+
+export { OverView, Activity, callList }
