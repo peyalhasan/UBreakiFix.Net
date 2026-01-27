@@ -18,7 +18,7 @@ export default function Chart() {
           <h2 className=" text-lg font-semibold">Call Trends - This Week</h2>
           <p className="text-gray-400 text-xs">Total: 472 calls</p>
         </div>
-        <select className="bg-[#1a264d] text-white text-xs border border-white/10 rounded-md px-2 py-1 outline-none">
+        <select className="bg-ternary text-white text-xs border border-white/10 rounded-md px-2 py-1 outline-none">
           <option>This Week</option>
           <option>14 Days Ago</option>
           <option>30 Days Ago</option>

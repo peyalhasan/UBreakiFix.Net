@@ -57,4 +57,33 @@ const OverView = [
     },
 ]
 
-export {OverView}
+
+const Activity = [
+    {
+        id: 1,
+        title: 'AI booked appointment for iPhone 13 screen repair',
+        time: 2,
+        icon: "green"
+    },
+    {
+        id: 2,
+        title: 'Warm transfer to technician - Software issue',
+        time: 5,
+        icon: "orange"
+    },
+    {
+        id: 3,
+        title: 'Quote provided for iPad battery replacement',
+        time: 8,
+        icon: "green",
+    },
+    {
+        id: 4,
+        title: 'Call dropped after 12 seconds',
+        time: 15,
+        icon: "pink",
+    },
+
+]
+
+export { OverView, Activity }
