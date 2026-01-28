@@ -71,5 +71,5 @@ Follow these steps to run the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/peyalhasan/UBreakiFix.Net.git](https://github.com/peyalhasan/UBreakiFix.Net.git)
+   git clone (https://github.com/peyalhasan/UBreakiFix.Net.git)
    cd UBreakiFix.Net
