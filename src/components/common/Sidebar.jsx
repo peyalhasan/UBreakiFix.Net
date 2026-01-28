@@ -23,7 +23,7 @@ function Sidebar({closeMobileMenu}) {
                         to={item.path}
                         className={({ isActive }) =>
                             `flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 relative group ${isActive
-                                ? ' to-transparent border-2 border-white bg-white/10 shadow-xl shadow-white/20'
+                                ? ' to-transparent border-2 border-white bg-white/10 shadow-[inset_0px_0px_20px_rgba(255,255,255,0.40),0px_10px_20px_rgba(255,255,255,0.50)]'
                                 : 'text-gray-400 hover:bg-white/5 hover:text-white'
                             }`
                         }
