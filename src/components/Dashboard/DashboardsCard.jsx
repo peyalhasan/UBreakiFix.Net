@@ -7,7 +7,7 @@ const DashboardsCard = ({card}) => {
             <div>
                 <h1 className='text-xl text-gray-400 '>{title}</h1>
                 <p className='text-3xl'>{total}</p>
-                <p className={`${icon ? 'text-green-600' : 'text-red-500'} text-lg`} > {icon? '+' : '-'} {percent}</p>
+                <p className={`${icon ? 'text-green-600' : 'text-red-500'} text-lg`} > {icon? '+' : '-'} {percent} %</p>
             </div>
             <img className='w-15 h-15' src={image} />
         </div>

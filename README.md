@@ -1,17 +1,75 @@
-# React + Vite
+# 🛠️ UBreakiFix.Net - Device Repair Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://u-breaki-fix-net.vercel.app)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-Currently, two official plugins are available:
+**UBreakiFix.Net** is a modern, high-performance web application designed for device repair stores to manage customer bookings, track repair statuses, and maintain client profiles. It features a sleek, dark-themed dashboard built for speed and responsiveness.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** [https://u-breaki-fix-net.vercel.app](https://u-breaki-fix-net.vercel.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📸 Image Upload & Preview Logic
+![Profile Image](./public/UBreakiFix.png)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# My-App
+- **Repair Dashboard:** A comprehensive view of all current and past repair bookings with advanced pagination.
+- **Booking System:** Easily generate and share booking links with clients.
+- **Client Management:** Store and view client contact details, device types, and repair history.
+- **Dynamic Profile Management:** Interactive profile section with real-time editing and image upload previews.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop views using Tailwind CSS.
+- **Modern UI/UX:** Dark-themed interface with custom scrollbars, glassmorphism effects, and Lucide icons.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide-React
+- **Form Handling:** React Hook Form
+- **Routing:** React Router
+- **State Management:** Context API
+- **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+UBreakiFix!/
+├── public/                 # Static assets (Images, Logos, Icons)
+│   ├── AI.png
+│   ├── Profile.png
+│   └── Logo.png
+├── src/
+│   ├── assets/             # Global static files
+│   ├── components/         # Reusable UI components organized by feature
+│   │   ├── Appoinments/
+│   │   ├── CallLogs/
+│   │   ├── Dashboard/
+│   │   ├── Settings/
+│   │   └── common/         # Shared components (Field, Button, etc.)
+│   ├── context/            # React Context definitions
+│   ├── hooks/              # Custom React hooks (useProfile)
+│   ├── Pages/              # Main route components/views
+│   ├── PrivateRoutes/      # Route guards and protection logic
+│   ├── Provider/           # Context Providers (ProfileProvider)
+│   ├── utils/              # Helper functions and mock data
+│   ├── App.jsx             # Main application component & routing
+│   └── main.jsx            # Application entry point
+├── vercel.json             # Vercel deployment configuration
+└── vite.config.js          # Vite build and dev server configuration
+
+```
+
+## 🛠️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/peyalhasan/UBreakiFix.Net.git](https://github.com/peyalhasan/UBreakiFix.Net.git)
+   cd UBreakiFix.Net
