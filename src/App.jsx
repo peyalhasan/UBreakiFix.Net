@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router';
-import { Menu, X, Settings } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Sidebar from './components/common/Sidebar';
 import Header from './components/common/Header/Header';
 import Dashboard from './Pages/Dashboard';
 import PrivateRoute from './PrivateRoutes/PrivateRoute';
 import Call from './Pages/Call';
 import Apponments from './Pages/Apponments';
+import Settings from './Pages/Settings';
+import Profile from './components/Settings/Profile';
+import EditProfile from './components/Settings/EditProfile';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -17,7 +20,7 @@ function App() {
     <main className='bg-primary min-h-screen flex overflow-x-hidden'>
       {/* Sidebar Overlay for Mobile */}
       {isSidebarOpen && (
-        <div 
+        <div
           className="fixed inset-0  z-40 md:hidden transition-opacity"
           onClick={toggleSidebar}
         />
@@ -26,7 +29,7 @@ function App() {
       {/* Sidebar */}
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-secondary transform transition-transform duration-300 ease-in-out 
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
-        
+
         <div className="flex justify-end p-4 md:hidden">
           <button onClick={toggleSidebar} className="text-white">
             <X size={24} />
@@ -38,7 +41,7 @@ function App() {
 
       {/* Main Content Area */}
       <div className="flex-1 bg-secendary flex flex-col md:ml-64 w-full">
-        
+
         {/* Mobile Top Bar */}
         <div className="sticky top-0 z-30 flex items-center justify-between p-4 bg-secondary border-b border-gray-800 md:hidden">
           <button onClick={toggleSidebar} className="text-white p-2 hover:bg-white/10 rounded-lg">
@@ -57,7 +60,10 @@ function App() {
               <Route path='/dashboard' element={<Dashboard />} />
               <Route path='/call' element={<Call />} />
               <Route path='/appoinments' element={<Apponments />} />
-              <Route path='/settings' element={<Settings />} />
+              <Route path='/settings' element={<Settings />} >
+                <Route index element={<Profile />} />
+                <Route path='/settings/editProfile' element={<EditProfile />} />
+              </Route>
             </Route>
           </Routes>
         </section>

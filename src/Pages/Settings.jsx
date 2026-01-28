@@ -1,8 +1,12 @@
 import React from 'react'
+import Profile from '../components/Settings/Profile'
+import { Outlet } from 'react-router'
 
 function Settings() {
   return (
-    <div>Settings</div>
+    <main>
+     <Outlet />
+    </main>
   )
 }
 
