@@ -28,15 +28,19 @@ function EditProfile() {
         if (file) {
             const reader = new FileReader();
             reader.onloadend = () => {
-                setPreviewImage(reader.result); 
+                setPreviewImage(reader.result);
             };
             reader.readAsDataURL(file);
         }
     };
 
     const onSubmit = (formData) => {
-        setProfile({ ...profile, ...formData, author: previewImage });
-        navigate('/settings'); 
+        setProfile({
+            ...profile,
+            ...formData,
+            author: previewImage
+        });
+        navigate('/settings');
     };
 
     return (
@@ -52,23 +56,21 @@ function EditProfile() {
             <div className="mb-10">
                 <p className="text-gray-400 mb-4 text-sm">Profile Image</p>
                 <div className="relative w-20 h-20">
-                    {/* Display current preview */}
-                    <img 
-                        className='w-full h-full rounded-full object-cover shadow-sm antialiased ' 
-                        src={previewImage} 
-                        alt="Profile" 
+                    <img
+                        className='w-full h-full rounded-full object-cover shadow-sm antialiased '
+                        src={previewImage}
+                        alt="Profile"
                     />
-                    
-                    {/* Hidden File Input */}
-                    <input 
-                        type="file" 
-                        ref={fileInputRef} 
-                        onChange={handleImageChange} 
-                        className="hidden" 
+
+                    <input
+                        type="file"
+                        ref={fileInputRef}
+                        onChange={handleImageChange}
+                        className="hidden"
                         accept="image/*"
                     />
 
-                    <button 
+                    <button
                         type="button"
                         onClick={handleEditIconClick}
                         className="absolute bottom-0 right-0 bg-blue-500 p-2 rounded-lg border-2 border-[#0a0f1e] text-white hover:bg-blue-600 transition-colors shadow-lg"
@@ -117,7 +119,7 @@ function EditProfile() {
                 </div>
 
                 <div className="flex justify-center pt-10">
-                    <button 
+                    <button
                         type="submit"
                         className="bg-[#00D261] hover:bg-[#00ba56]  font-bold py-3.5 px-28 rounded-2xl transition-all active:scale-95 shadow-lg shadow-green-500/20"
                     >
